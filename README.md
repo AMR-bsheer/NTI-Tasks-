@@ -54,7 +54,8 @@ primitive data types :
 - Boolean 
 - string 
 - null /  type of null object 
-- undefined / type of undefined undefined 
+- undefined / type of undefined undefined
+- type of Nan undefined
 
 nonprimitive data types :
 - array / type of array object 
