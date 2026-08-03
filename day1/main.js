@@ -135,4 +135,23 @@ console.log(typeof mixedBag[6]);
 // window.alert(result);
 // document.getElementById("result").innerText = result ;
 
+// taslk20
+// var num1 = Number(prompt("Enter first number : "));
+// var num2 = Number(prompt("Enter second number : "));
+
+// console.log(`${num1}+${num2} = ${num1 + num2}`);
+// console.log(`${num1}-${num2} = ${num1 - num2}`);
+// console.log(`${num1}*${num2} = ${num1 * num2}`);
+// console.log(`${num1}/${num2} = ${num1 / num2}`);
+// console.log(`${num1}%${num2} = ${num1 % num2}`);
+// console.log(`${num1}**${num2} = ${num1 ** num2}`);
+
+// task21
+var a = 40 ;
+var b = 50 ;
+var c = "60" ;
+var d = 30 ;
+var e = 30 ;
+// cause varaible c defined as string 
+console.log(a + b + Number(c) + d + e);
 
