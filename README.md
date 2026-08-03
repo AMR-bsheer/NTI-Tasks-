@@ -55,7 +55,7 @@ primitive data types :
 - string 
 - null /  type of null object 
 - undefined / type of undefined undefined
-- type of Nan undefined
+- type of Nan number and it falsy value 
 
 nonprimitive data types :
 - array / type of array object 
