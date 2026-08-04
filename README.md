@@ -1,5 +1,5 @@
 # NTI-Tasks-
-#day1
+# day1
 ## Java script advantages 
 
 1.  detect user event (actions )
@@ -68,7 +68,7 @@ nonprimitive data types :
 
 - function
 
-  #day2
+  # day2
   - conditional statement
 - switch case 
 - nested condition 
