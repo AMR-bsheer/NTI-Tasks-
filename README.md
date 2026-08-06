@@ -76,5 +76,12 @@ nonprimitive data types :
 - for loop 
 - nested loop
 - while loop 
-- do while loop 
+- do while loop
+
+---
+## third day
+
+- number and string methods
+
+---
 
