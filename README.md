@@ -84,4 +84,19 @@ nonprimitive data types :
 - number and string methods
 
 ---
+## fourth day 
+
+- object
+- nested object
+- object methods
+- array
+- function
+- foe each
+- for ... of
+- call back function
+- slice vs splice
+- flat / flatMap
+
+---
+
 
