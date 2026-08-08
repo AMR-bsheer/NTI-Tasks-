@@ -90,7 +90,6 @@ nonprimitive data types :
 - nested object
 - object methods
 - array
-- function
 - foe each
 - for ... of
 - call back function
@@ -98,5 +97,8 @@ nonprimitive data types :
 - flat / flatMap
 
 ---
+## fifth day 
+
+- function 
 
 
