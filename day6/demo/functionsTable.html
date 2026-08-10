@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Functions Summary</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    line-height: 1.5;
+  }
+  h1 {
+    text-align: center;
+    color: #369ea3;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background-color: #ffbf00;
+    color: #000;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  caption {
+    caption-side: top;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<h1>JavaScript Functions Summary</h1>
+
+<table>
+  <caption>Function Types Overview</caption>
+  <thead>
+    <tr>
+      <th>Function Type</th>
+      <th>Syntax Example</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Declaration</td>
+      <td><code>function f() {}</code></td>
+      <td>Hoisted</td>
+    </tr>
+    <tr>
+      <td>Expression</td>
+      <td><code>const f = function() {}</code></td>
+      <td>Not hoisted</td>
+    </tr>
+    <tr>
+      <td>Arrow</td>
+      <td><code>const f = () =&gt; {}</code></td>
+      <td>Short syntax, no this</td>
+    </tr>
+    <tr>
+      <td>IIFE</td>
+      <td><code>(function(){})();</code></td>
+      <td>Executes immediately</td>
+    </tr>
+    <tr>
+      <td>Callback</td>
+      <td><code>f(g)</code></td>
+      <td>Pass function as argument</td>
+    </tr>
+    <tr>
+      <td>Higher-Order</td>
+      <td>Returns or takes function</td>
+      <td>Flexible design</td>
+    </tr>
+    <tr>
+      <td>Recursive</td>
+      <td><code>function f(){f();}</code></td>
+      <td>Calls itself</td>
+    </tr>
+    <tr>
+      <td>Rest Params</td>
+      <td><code>function f(...args){}</code></td>
+      <td>Collects arguments</td>
+    </tr>
+    <tr>
+      <td>Default Params</td>
+      <td><code>function f(a=5){}</code></td>
+      <td>Default values</td>
+    </tr>
+  </tbody>
+</table>
+
+<p id="pp"></p>
+<script src="functions.js"></script>
+</body>
+</html>
