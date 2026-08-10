@@ -101,7 +101,7 @@ nonprimitive data types :
 
 - function
 - Dom
-  [https://htmlcheatsheet.com/js/](html-cheat-sheet)
+- [cheat sheets]([html-cheat-sheet](https://htmlcheatsheet.com/js/))
 ---
 ## day6 
 - Dom
