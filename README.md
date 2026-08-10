@@ -100,7 +100,22 @@ nonprimitive data types :
 ## day5
 
 - function
-- dom
-  [https://htmlcheatsheet.com/js/](html-cheat-sheet) 
+- Dom
+  [https://htmlcheatsheet.com/js/](html-cheat-sheet)
+---
+## day6 
+- Dom
+- styles and classes
+- search on stop-propagation
+- events
+- mouse events
+- input events / keyboard
+- focus and blur
+- submit event form
+- create / append / remove
+- Es6
+- function scope
+---
+
 
 
