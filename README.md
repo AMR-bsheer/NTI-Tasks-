@@ -101,5 +101,6 @@ nonprimitive data types :
 
 - function
 - dom
+  [https://htmlcheatsheet.com/js/](html-cheat-sheet) 
 
 
