@@ -79,12 +79,12 @@ nonprimitive data types :
 - do while loop
 
 ---
-## third day
+## day3
 
 - number and string methods
 
 ---
-## fourth day 
+## day4
 
 - object
 - nested object
@@ -97,8 +97,9 @@ nonprimitive data types :
 - flat / flatMap
 
 ---
-## fifth day 
+## day5
 
-- function 
+- function
+- dom
 
 
