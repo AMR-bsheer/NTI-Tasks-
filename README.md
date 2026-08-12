@@ -116,6 +116,17 @@ nonprimitive data types :
 - Es6
 - function scope
 ---
-
+## day 7
+- function scope
+- re-declaration
+- re-assign
+- const-array/object
+- for of -const
+- const vs var
+- closure
+- deep copy structureClone
+- ES6 for in / for of
+- maps
+- sets
 
 
