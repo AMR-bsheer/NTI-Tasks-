@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #000000;
+}
+
+
+
+form, #searchInput {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin: 5px;
+}
+
+#searchInput {
+    width: 98%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
