@@ -132,6 +132,9 @@ nonprimitive data types :
 ---
 ## day 8 
 - modules js
-- 
-
-
+- NPM package manger (node package manger)
+- angular
+- ajax
+- cli command line interface 
+- type script ts
+---
