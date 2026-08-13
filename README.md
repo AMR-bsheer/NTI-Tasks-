@@ -129,4 +129,9 @@ nonprimitive data types :
 - maps
 - sets
 
+---
+## day 8 
+- modules js
+- 
+
 
