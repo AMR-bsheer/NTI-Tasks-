@@ -138,3 +138,10 @@ nonprimitive data types :
 - cli command line interface 
 - type script ts
 ---
+## day 9
+
+- Angular components
+- app config angular
+- routing app routes
+- ng new project-name
+- 
