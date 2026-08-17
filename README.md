@@ -144,4 +144,23 @@ nonprimitive data types :
 - app config angular
 - routing app routes
 - ng new project-name
-- 
+---
+## day10
+- one way data binding
+- text interpolation
+- property binding
+- Event binding 
+- class binding
+- stye binding
+- banana box
+- Angular forms module
+- data binding
+- two way data binding
+- built in control flow
+- @if and @else if
+- @switch case
+- @for
+- sharing data from parent to child
+---
+## day11
+
