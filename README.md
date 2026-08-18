@@ -174,4 +174,4 @@ nonprimitive data types :
 - event listener 
 - load
 - ready state
-- 
+- sync & await 
