@@ -164,3 +164,14 @@ nonprimitive data types :
 ---
 ## day11
 
+- JavaScript API
+- JSON placeholder website
+- get and post , update  methods
+- post vs patch
+- base URL and end points and methods
+- XML HTTP request
+- swagger UI , postman collection
+- event listener 
+- load
+- ready state
+- 
