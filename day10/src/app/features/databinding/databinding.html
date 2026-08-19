@@ -1,0 +1,261 @@
+<div class="db-page">
+  <header class="db-hero">
+    <p class="db-eyebrow">Day 3 · Angular Fundamentals</p>
+    <h1 class="db-title">{{ courseName }}</h1>
+
+    <nav class="db-toc" aria-label="Demo sections">
+      <a href="#interpolation">Interpolation</a>
+      <a href="#property">Property</a>
+      <a href="#compare">vs</a>
+      <a href="#attribute">Attribute</a>
+      <a href="#event">Event</a>
+      <a href="#event-example">Counter</a>
+      <a href="#class">Class</a>
+      <a href="#style">Style</a>
+      <a href="#two-way">Two-way</a>
+      <a href="#cheat">Review</a>
+    </nav>
+  </header>
+
+  <!-- 01 Interpolation -->
+  <section id="interpolation" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">01</span>
+      <div>
+        <h2>Interpolation <code ngNonBindable>{{ }}</code></h2>
+        <p>Component → نص على الشاشة</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <p>Course: <strong>{{ courseName }}</strong></p>
+      <p>Next lesson: <strong>{{ lessonNumber + 1 }}</strong></p>
+      <p>Title: <strong>{{ fullTitle }}</strong></p>
+    </div>
+  </section>
+
+  <!-- 02 Property -->
+  <section id="property" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">02</span>
+      <div>
+        <h2>Property Binding <code>[property]</code></h2>
+        <p>Component → DOM property</p>
+      </div>
+    </div>
+    <div class="db-demo">
+      <img class="db-logo" [src]="imageUrl" alt="Angular" />
+      <div class="db-row">
+        <button class="btn btn-secondary" [disabled]="isDisabled">Save</button>
+        <button class="btn btn-outline-primary" type="button" (click)="toggleDisabled()">
+          Toggle disabled ({{ isDisabled }})
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 Compare -->
+  <section id="compare" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">03</span>
+      <div>
+        <h2>Property vs Interpolation</h2>
+        <p>نص → الاتنين ينفعوا · boolean/number → Property</p>
+      </div>
+    </div>
+
+    <div class="db-demo db-demo-split">
+      <div>
+        <p class="db-label">كلاهما OK</p>
+        <button class="btn btn-primary">{{ buttonLabel }}</button>
+      </div>
+      <div>
+        <p class="db-label">Property أفضل</p>
+        <progress [value]="progress" max="100"></progress>
+        <span>{{ progress }}%</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Attribute -->
+  <section id="attribute" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">04</span>
+      <div>
+        <h2>Attribute Binding <code>[attr.name]</code></h2>
+        <p>لما مفيش DOM property مناسب (ARIA / title / ...)</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <button class="btn btn-success" [attr.title]="tooltip">Hover me</button>
+    </div>
+  </section>
+
+  <!-- 05 Event -->
+  <section id="event" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">05</span>
+      <div>
+        <h2>Event Binding <code>(event)</code></h2>
+        <p>View → Component</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <button class="btn btn-primary" type="button" (click)="onClick()">
+        Clicked {{ clickCount }} time(s)
+      </button>
+
+      <label class="db-field">
+        Type
+        <input type="text" (keyup)="onKeyup($event)" placeholder="..." />
+      </label>
+      <p class="mb-0">Typed: <strong>{{ typedText || '—' }}</strong></p>
+    </div>
+  </section>
+
+  <!-- 06 Counter -->
+  <section id="event-example" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">06</span>
+      <div>
+        <h2>Event Example — Counter</h2>
+        <p>أكتر من event على نفس الـ state</p>
+      </div>
+    </div>
+
+    <div class="db-demo db-counter">
+      <button class="btn btn-outline-danger" type="button" (click)="dec()">−</button>
+      <span class="db-counter-value">{{ counter }}</span>
+      <button class="btn btn-outline-success" type="button" (click)="inc()">+</button>
+      <button class="btn btn-secondary" type="button" (click)="resetCounter()">Reset</button>
+    </div>
+  </section>
+
+  <!-- 07 Class -->
+  <section id="class" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">07</span>
+      <div>
+        <h2>Class Binding <code>[class.name]</code></h2>
+        <p>تشغيل / إيقاف class من الـ component</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <div class="db-row">
+        <button class="btn btn-sm btn-outline-primary" type="button" (click)="toggleActive()">
+          Toggle active
+        </button>
+        <button class="btn btn-sm btn-outline-danger" type="button" (click)="toggleError()">
+          Toggle error
+        </button>
+      </div>
+
+      <div class="db-box" [class.active]="isActive" [class.err]="hasError">
+        active={{ isActive }} · error={{ hasError }}
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 Style -->
+  <section id="style" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">08</span>
+      <div>
+        <h2>Style Binding <code>[style.prop]</code></h2>
+        <p>نفس فكرة الـ class بس للـ CSS</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <div class="db-row">
+        <input type="color" [(ngModel)]="boxColor" />
+        <button class="btn btn-sm btn-outline-dark" type="button" (click)="bumpFont(-2)">A−</button>
+        <button class="btn btn-sm btn-outline-dark" type="button" (click)="bumpFont(2)">A+</button>
+      </div>
+      <div
+        class="db-style-box"
+        [style.backgroundColor]="boxColor"
+        [style.fontSize.px]="fontSize"
+      >
+        {{ fontSize }}px
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 Two-way -->
+  <section id="two-way" class="db-section">
+    <div class="db-section-head">
+      <span class="db-badge">09</span>
+      <div>
+        <h2>Two-way <code>[(ngModel)]</code></h2>
+        <p>الاتجاهين مع بعض (محتاج FormsModule)</p>
+      </div>
+    </div>
+
+    <div class="db-demo">
+      <label class="db-field">
+        Name
+        <input type="text" [(ngModel)]="studentName" placeholder="Your name" />
+      </label>
+      <p class="mb-0">Hello, <strong>{{ studentName || '...' }}</strong></p>
+    </div>
+    <button class="btn btn-info" (click)="changestudentName()">change pro [()]</button>
+  </section>
+
+  <!-- Review -->
+  <section id="cheat" class="db-section db-section-last">
+    <div class="db-section-head">
+      <span class="db-badge">★</span>
+      <div>
+        <h2>Review</h2>
+      </div>
+    </div>
+
+    <div class="table-responsive">
+      <table class="table table-striped align-middle db-cheat">
+        <thead>
+          <tr>
+            <th>Binding</th>
+            <th>Syntax</th>
+            <th>Direction</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Interpolation</td>
+            <td><code ngNonBindable>{{ value }}</code></td>
+            <td>→ View</td>
+          </tr>
+          <tr>
+            <td>Property</td>
+            <td><code>[prop]="x"</code></td>
+            <td>→ View</td>
+          </tr>
+          <tr>
+            <td>Attribute</td>
+            <td><code>[attr.name]="x"</code></td>
+            <td>→ View</td>
+          </tr>
+          <tr>
+            <td>Class / Style</td>
+            <td><code>[class.x]</code> / <code>[style.x]</code></td>
+            <td>→ View</td>
+          </tr>
+          <tr>
+            <td>Event</td>
+            <td><code>(click)="fn()"</code></td>
+            <td>← Component</td>
+          </tr>
+          <tr>
+            <td>Two-way</td>
+            <td><code>[(ngModel)]="x"</code></td>
+            <td>↔ Both</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

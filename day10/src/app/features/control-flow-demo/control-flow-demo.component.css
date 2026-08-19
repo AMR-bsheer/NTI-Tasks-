@@ -1,0 +1,14 @@
+/* Bootstrap handles visual design.
+   Keep this file tiny — only classroom presentation helpers. */
+
+:host {
+  display: block;
+}
+
+section[id] {
+  scroll-margin-top: 1rem;
+}
+
+code {
+  font-size: 0.9em;
+}
