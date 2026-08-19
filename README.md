@@ -174,4 +174,17 @@ nonprimitive data types :
 - event listener 
 - load
 - ready state
-- sync & await 
+- sync & await
+
+---
+## day12
+
+- promises
+- jsv9000.app
+- fetch
+- Async /Await
+- send data from parent to child
+-  angular serves
+---
+## day13
+
