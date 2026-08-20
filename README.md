@@ -187,4 +187,6 @@ nonprimitive data types :
 -  angular serves
 ---
 ## day13
+- view child & view parent
+- life cycle hooks angular
 - 
