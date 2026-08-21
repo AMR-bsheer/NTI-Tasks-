@@ -189,4 +189,17 @@ nonprimitive data types :
 ## day13
 - view child & view parent
 - life cycle hooks angular
-- 
+
+---
+
+## day14
+- product-API
+- angular serves
+- forms crud
+- angular add & update - delete
+- validation
+- pipes
+- directives
+- closureِ
+
+--- 
