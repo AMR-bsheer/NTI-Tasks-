@@ -1,0 +1,18 @@
+{
+  "name": "simple-text-tools",
+  "version": "1.0.1",
+  "description": "A lightweight package for common text manipulation tasks",
+  "keywords": [
+    "text-tools",
+    "strings",
+    "text",
+    "utilities"
+  ],
+  "license": "MIT",
+  "author": "Ahmed Mahmoud",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  }
+}
